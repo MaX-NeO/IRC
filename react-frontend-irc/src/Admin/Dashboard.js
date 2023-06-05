@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { GetData, DeleteData } from '../services/api';
 import { useNavigate } from 'react-router-dom';
-import { AddBtn, LogoutBtn } from '../Componentes/Buttons';
+import { AddBtn, HomeBtn, LogoutBtn } from '../Componentes/Buttons';
 import AuthCheck from './Auth/AuthCheck';
 
 export default function Dashboard() {
@@ -81,6 +81,7 @@ export default function Dashboard() {
             </div>
             <AddBtn />
             <LogoutBtn />
+            <HomeBtn />
         </div>
     );
 }

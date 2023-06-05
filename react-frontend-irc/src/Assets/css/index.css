@@ -318,7 +318,7 @@ head-data {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  gap: 0.3rem;
+  gap: 0.6rem;
 }
 
 .form-btn-x {
@@ -395,7 +395,7 @@ head-data {
   outline: none;
   background: #e8e8e8;
   box-shadow: 5px 5px 17px #c8c8c8,
-             -5px -5px 17px #ffffff;
+    -5px -5px 17px #ffffff;
   border: none;
   border-radius: 10px;
   transition: all .5s;
@@ -404,9 +404,10 @@ head-data {
 .product-input:focus {
   background: #e8e8e8;
   box-shadow: inset 5px 5px 17px #c8c8c8,
-            inset -5px -5px 17px #ffffff;
+    inset -5px -5px 17px #ffffff;
 }
-.form-data-align{
+
+.form-data-align {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -425,13 +426,13 @@ head-data {
   background: #e8e8e8;
   border: 1px solid #e8e8e8;
   box-shadow: 6px 6px 12px #c5c5c5,
-             -6px -6px 12px #ffffff;
+    -6px -6px 12px #ffffff;
 }
 
 .button2:active {
   color: #666;
   box-shadow: inset 4px 4px 12px #c5c5c5,
-             inset -4px -4px 12px #ffffff;
+    inset -4px -4px 12px #ffffff;
 }
 
 .button2:before {
@@ -479,4 +480,31 @@ head-data {
   top: -45%;
   background-color: #009087;
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.product-view {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container-main {
+  margin-top: 25vh;
+  width: 50vw;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.product-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.product-cover {
+  height: 100% !important;
+  width: 100% !important;
 }

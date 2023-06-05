@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 import '../Assets/css/Form.css'
 import { Link,useNavigate } from 'react-router-dom'
 import { HomeBtn } from '../Componentes/Buttons'
@@ -6,11 +6,20 @@ import { xSignin } from '../services/api'
 import Cookies from 'js-cookie';
 
 export default function Signin() {
+  
   const navigate = useNavigate();
+  const [isLoggedIn, setIsLoggedIn] = useState(Cookies.get('isLoggedIn') === 'true');
   const [formData, setFormData] = useState({
     username: '',
     password: '',
   });
+
+  useEffect(() => {
+      if (isLoggedIn) {
+        navigate('/Dashboard');
+      }
+    }, [isLoggedIn, navigate]);
+
 
 
   const handleInputChange = (e) => {

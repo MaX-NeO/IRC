@@ -23,6 +23,7 @@ export default function EditProduct() {
         try {
             const response = await FindData(productId);
             setProduct(response.data);
+            console.log(response.data);
         } catch (error) {
             console.error(error);
         }

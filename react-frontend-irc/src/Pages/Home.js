@@ -6,26 +6,29 @@ import { GetData } from '../services/api';
 export default function Home() {
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
+  
   useEffect(() => {
     fetchData();
   }, []);
 
   const fetchData = async () => {
     try {
-      const response = await GetData(); 
-      setProducts(response.data); 
-      console.log(response.data)
+      const response = await GetData();
+      setProducts(response.data);
+      console.log(response.data);
     } catch (error) {
       console.error(error);
     }
   };
-  const viewdata = (productId) =>{
-    // navigate(`/view/${productId}`);
-  }
+
+  const viewProduct = (productId) => {
+    navigate(`/View/${productId}`);
+  };
+
   return (
     <div className='data-container'>
       {products.map((product) => (
-        <div key={product.pid} className="card-container" onClick={viewdata(product.id)}>
+        <div key={product.pid} className="card-container" onClick={() => viewProduct(product.pid)}>
           <div className="card">
             <div className="front-content">
               <img src={product.productimg} className='card-img' alt='tree' />

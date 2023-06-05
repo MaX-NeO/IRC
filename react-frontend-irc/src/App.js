@@ -5,6 +5,7 @@ import Signin from './Admin/Signin';
 import Dashboard from './Admin/Dashboard';
 import EditProduct from './Admin/EditProduct';
 import AddProduct from './Admin/AddProduct';
+import ViewProduct from './Pages/ViewProduct';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path='/Dashboard' element={<Dashboard/>}/>
         <Route exact path='/Dashboard/edit/:productId' element={<EditProduct/>}/>
         <Route exact path='/Dashboard/add' element={<AddProduct/>}/>
+        <Route exact path='/View/:productId' element={<ViewProduct/>}/>
       </Routes>
   );
 }

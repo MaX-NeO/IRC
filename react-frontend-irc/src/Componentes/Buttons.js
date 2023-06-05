@@ -71,7 +71,7 @@ const LogoutBtn = () => {
 
     return (
 
-        <button className="route-btn xy-1 logout-btn" onClick={navigateLogout}>
+        <button className="route-btn xy-2 logout-btn" onClick={navigateLogout}>
             <div className="sign">
                 <span className="material-symbols-outlined">power_settings_new</span>
             </div>
@@ -88,7 +88,7 @@ const AddBtn = () => {
 
     return (
 
-        <button className="route-btn xy-2 home-btn" onClick={navigateAdd}>
+        <button className="route-btn xy-3 add-btn" onClick={navigateAdd}>
             <div className="sign">
                 <span className="material-symbols-outlined">add</span>
             </div>
