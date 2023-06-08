@@ -64,8 +64,8 @@ export default function Dashboard() {
                             <tr key={product.pid}>
                                 <td className='table-data'>{product.productname}</td>
                                 <td className='table-data'>{product.productstock}</td>
-                                <td className='table-data'>{product.productprice}</td>
-                                <td className='table-data'>{product.productrating}</td>
+                                <td className='table-data'>₹ {product.productprice}</td>
+                                <td className='table-data'>⭐ {product.productrating}</td>
                                 <td className='table-actions form-btn-container'>
                                     <button onClick={() => handleEdit(product.pid)} className='form-btn-x form-edit-btn'>
                                     <span className="material-symbols-outlined ico-x">edit</span>

@@ -34,8 +34,8 @@ export default function ViewProduct() {
                 </div>
                 <div className='product-content-main'>
                     <h1 className='product-title'>{product.productname}</h1>
-                    <h3 className='product-price'>Price: {product.productprice}</h3>
-                    <h3 className='product-rating'>Rating: {product.productrating}</h3>
+                    <h3 className='product-price'>Price: ₹ {product.productprice}</h3>
+                    <h3 className='product-rating'>Rating: ⭐ {product.productrating}</h3>
                 </div>
             </div>
             <BackBtn />

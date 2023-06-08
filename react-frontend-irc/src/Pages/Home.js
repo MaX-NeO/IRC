@@ -36,9 +36,9 @@ export default function Home() {
             <div className="content">
               <p className="heading">{product.productname}</p>
               <p>
-                Price: {product.productprice} INR
+                Price: ₹ {product.productprice} 
                 <br />
-                Rating: {product.productrating}
+                Rating: ⭐ {product.productrating}
               </p>
             </div>
           </div>
