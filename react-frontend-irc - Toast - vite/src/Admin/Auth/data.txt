@@ -1,0 +1,42 @@
+  {
+    "productname": "Straberry",
+    "productstock": 10,
+    "productprice": 200,
+    "productrating": 8.2,
+    "productimg": "https://res.cloudinary.com/du8xie4xl/image/upload/v1686157059/Fruits/strabery_adhbuq.jpg"
+  },
+  {
+    "productname": "Mangos",
+    "productstock": 15,
+    "productprice": 300,
+    "productrating": 7.6,
+    "productimg": "https://res.cloudinary.com/du8xie4xl/image/upload/v1686157058/Fruits/mango_rbvbd6.jpg"
+  },
+  {
+    "productname": "Grape",
+    "productstock": 30,
+    "productprice": 150,
+    "productrating": 9.3,
+    "productimg": "https://res.cloudinary.com/du8xie4xl/image/upload/v1686156992/Fruits/grape_oed9gy.jpg"
+  },
+  {
+    "productname": "Orange",
+    "productstock": 6,
+    "productprice": 180,
+    "productrating": 8.3,
+    "productimg": "https://res.cloudinary.com/du8xie4xl/image/upload/v1686156991/Fruits/orange_d8rvna.jpg"
+  },
+  {
+    "productname": "Banana",
+    "productstock": 33,
+    "productprice": 410,
+    "productrating": 6.8,
+    "productimg": "https://res.cloudinary.com/du8xie4xl/image/upload/v1686156992/Fruits/banana_ydhuzf.jpg"
+  },
+  {
+    "productname": "Apple",
+    "productstock": 18,
+    "productprice": 500,
+    "productrating": 8.4,
+    "productimg": "https://res.cloudinary.com/du8xie4xl/image/upload/v1686156992/Fruits/apple_ato4or.jpg"
+  }
